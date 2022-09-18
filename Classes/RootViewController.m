@@ -97,12 +97,12 @@
 	NSLog(@"Started Parsing: %@", parser.url);
 }
 
-- (void)feedParser:(MWFeedParser *)parser didParseFeedInfo:(MWFeedInfo *)info {
+- (void)feedParser:(MWFeedParser *)parser didParseMWFeedParserFeedInfo:(MWFeedInfo *)info {
 	NSLog(@"Parsed Feed Info: “%@”", info.title);
 	self.title = info.title;
 }
 
-- (void)feedParser:(MWFeedParser *)parser didParseFeedItem:(MWFeedItem *)item {
+- (void)feedParser:(MWFeedParser *)parser didParseMWFeedParserFeedItem:(MWFeedItem *)item {
 	NSLog(@"Parsed Feed Item: “%@”", item.title);
 	if (item) [parsedItems addObject:item];	
 }
