@@ -93,7 +93,7 @@
 #pragma mark -
 #pragma mark MWFeedParserDelegate
 
-- (void)feedParserDidStart:(MWFeedParser *)parser {
+- (void)mwFeedParserDidStart:(MWFeedParser *)parser {
 	NSLog(@"Started Parsing: %@", parser.url);
 }
 
